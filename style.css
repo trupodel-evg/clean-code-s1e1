@@ -36,17 +36,17 @@ body {
   display: flex;
 }
 ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 li, 
 .main-wrapper__title {
-  list-style:none;
+  list-style: none;
 }
 input,
 .main-wrapper__new-task-input,
 .main-wrapper__new-task-button {
-  outline:none;
+  outline: none;
 }
 .main-wrapper__new-task-button {
   background: none;
@@ -138,14 +138,14 @@ ul#completed-tasks label {
 
 /* Edit Task */
 ul li input[type=text] {
-  display:none;
+  display: none;
 }
 
 ul li.editMode input[type=text] {
-  display:inline-block;
-  width:224px;
+  display: inline-block;
+  width: 224px;
 }
 
 .incomplete-tasks-list__li_edit {
-  display:none;
+  display: none;
 }
