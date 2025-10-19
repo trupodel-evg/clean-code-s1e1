@@ -128,10 +128,6 @@
   align-items: center;
 }
 
-.todo-list__li > * {
-  vertical-align: middle;
-}
-
 .todo-list__checkbox {
   margin: 0 10px;
 }
