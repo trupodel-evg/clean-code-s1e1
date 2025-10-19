@@ -39,8 +39,9 @@ var createNewTaskElement=function(taskString){
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.classList.add("todo-list__checkbox");
     editInput.type="text";
-    editInput.className="todo-list__input";
+    editInput.classList.add("todo-list__input");
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="todo-list__button_edit";
@@ -50,7 +51,6 @@ var createNewTaskElement=function(taskString){
     deleteButtonImg.src="./remove.svg";
     deleteButton.appendChild(deleteButtonImg);
 
-
     //and appending.
     listItem.appendChild(checkBox);
     listItem.appendChild(label);
@@ -59,8 +59,6 @@ var createNewTaskElement=function(taskString){
     listItem.appendChild(deleteButton);
     return listItem;
 }
-
-
 
 var addTask=function(){
     console.log("Add Task...");
@@ -96,13 +94,13 @@ var editTask=function(){
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
-        label.classList.remove="todo-list__label_hide";
-        editInput.classList.remove="todo-list__input-not-save";
+        label.classList.remove("todo-list__label_hide");
+        editInput.classList.remove("todo-list__input-not-save");
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
-        label.classList.add="todo-list__li";
-        editInput.classList.add="todo-list__input-not-save";
+        label.classList.add("todo-list__label_hide");
+        editInput.classList.add("todo-list__input-not-save");
     }
     console.log(label);
 
