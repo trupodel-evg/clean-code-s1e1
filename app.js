@@ -96,10 +96,15 @@ var editTask=function(){
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
+        label.classList.remove="todo-list__label_hide";
+        editInput.classList.remove="todo-list__input-not-save";
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
+        label.classList.add="todo-list__li";
+        editInput.classList.add="todo-list__input-not-save";
     }
+    console.log(label);
 
     //toggle .editmode on the parent.
     listItem.classList.toggle("incomplete-tasks-list__li_edit");

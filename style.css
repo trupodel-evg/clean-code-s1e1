@@ -169,15 +169,14 @@
 } */
 
 /* Edit Task */
-.todo-list__input_hide {
+/* .todo-list__input_hide, */
+.todo-list__label_hide {
   display: none;
 }
 
-.todo-list__input {
+.todo-list__input,
+.todo-list__input-not-save {
   display: inline-block;
   width: 224px;
 }
 
-/* .incomplete-tasks-list__li_edit {
-  display: none;
-} */
