@@ -50,7 +50,7 @@
   padding: 0px;
 }
 
-.todo-list___li, 
+.todo-list__li, 
 .main-wrapper__title {
   list-style: none;
 }
@@ -118,7 +118,7 @@
 }
 
 /* Task list */
-.todo-list___li {
+.todo-list__li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -127,7 +127,7 @@
   align-items: center;
 }
 
-.todo-list___li > * {
+.todo-list__li > * {
   vertical-align: middle;
 }
 
