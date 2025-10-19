@@ -1,7 +1,8 @@
 /* Basic Style */
 .body,
 .todo-list__button_delete,
-.todo-list__input {
+.todo-list__input,
+.completed__label {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -167,9 +168,9 @@
 }
 
 /* Completed */
-.completed__label {
-  color: #333;
-}
+/* .completed__label {
+  color: #888;
+} */
 
 /* Edit Task */
 .todo-list__input_hide {
